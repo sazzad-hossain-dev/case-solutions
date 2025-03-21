@@ -17,7 +17,7 @@ const Header = () => {
     return (
         <header className="bg-white py-5 shadow-md">
             {/* Header Container */}
-            <div className="container mx-auto flex gap-20 items-center">
+            <div className="px-10 max-w-7xl mx-auto flex gap-20 items-center">
                 {/* Hamburger Menu (Mobile Only) */}
 
                 <div className="md:hidden flex items-center pl-12">
@@ -45,23 +45,23 @@ const Header = () => {
                         src="/assets/logo.png"
                         alt="Logo"
                         height={50}
-                        width={150}
+                        width={80}
                     />
                 </div>
 
                 {/* Right Content Section */}
                 <div className="hidden md:block w-full">
                     {/* Slogan & Contact Info */}
-                    <div className="flex justify-between items-center">
+                    <div className="flex justify-between items-center ">
                         {/* Business Slogan */}
-                        <p className="text-[#2B2F67] text-lg font-urbanist font-bold italic border-b border-[#C9C9C9] ">
+                        <p className="text-[#2B2F67] text-[min(20px,1.3vw)] font-urbanist font-bold italic border-b border-[#C9C9C9] ">
                             La solución tecnológica a la medida de tu negocio
                         </p>
 
                         {/* Contact Details */}
-                        <div className="flex items-center gap-6">
+                        <div className="flex items-center">
                             {/* First Contact Info */}
-                            <div className="text-[#8F092F] text-base ">
+                            <div className="text-[#8F092F] text-[min(16px,1vw)] mr-3  ">
                                 <p className=" font-bold font-urbanist">
                                     correo@casesolutions.mx
                                 </p>
@@ -81,7 +81,7 @@ const Header = () => {
                             {/* Divider between contact details */}
 
                             {/* Second Contact Info */}
-                            <div className="text-[#8F092F] text-base border-l pl-4 border-[#8F092F]">
+                            <div className="text-[#8F092F] text-[min(16px,1vw)] border-l pl-4 border-[#8F092F]">
                                 <p className=" font-bold font-urbanist">
                                     (55) 1107-0478
                                 </p>
@@ -102,12 +102,9 @@ const Header = () => {
 
                     {/* Navigation Menu */}
                     <nav className=" mt-4 pt-3">
-                        <ul className="flex justify-between items-center  text-[#2B2F67] font-bold font-urbanist text-lg">
+                        <ul className="flex justify-between items-center  text-[#2B2F67] font-bold font-urbanist text-[min(20px,1.3vw)]">
                             {navlinks.map((link) => (
-                                <li
-                                    key={link}
-                                    className="cursor-pointer hover:border-b-2 border-[#2B2F67] transition-all duration-150"
-                                >
+                                <li key={link} className="cursor-pointer ">
                                     {link}
                                 </li>
                             ))}
@@ -117,9 +114,9 @@ const Header = () => {
             </div>
 
             {isMenuOpen && (
-                <div className="md:hidden bg-[#fff] absolute top-40 left-0 w-full h-full  z-10 flex flex-col ">
+                <div className="md:hidden bg-[#fff] absolute top-24 left-0 w-full h-full  z-10 flex flex-col ">
                     {/* Company Slogan */}
-                    <div className="text-white bg-[#2B2F67] text-base font-urbanist font-bold italic border-b border-[#C9C9C9] p-4 text-center">
+                    <div className="text-white bg-[#2B2F67] text-[min(20px,3.4vw)] font-urbanist font-bold italic border-b border-[#C9C9C9] p-4 text-center">
                         La solución tecnológica a la medida de tu negocio
                     </div>
 
@@ -129,7 +126,7 @@ const Header = () => {
                             {navlinks.map((link) => (
                                 <li
                                     key={link}
-                                    className="cursor-pointer text-[#2B2F67] text-lg font-urbanist py-2 font-bold"
+                                    className="cursor-pointer text-[#2B2F67]  text-[min(20px,3.4vw)]  font-urbanist py-2 font-bold"
                                 >
                                     {link}
                                 </li>
@@ -145,12 +142,12 @@ const Header = () => {
                                 src="/assets/logo.png"
                                 alt="Logo"
                                 height={50}
-                                width={150}
+                                width={80}
                             />
                         </div>
 
                         {/* Contact Info */}
-                        <div className="text-[#8F092F] text-base mt-4">
+                        <div className="text-[#8F092F]  text-[min(18px,2.5vw)]  mt-4">
                             <p className="font-bold font-urbanist">
                                 correo@casesolutions.mx
                             </p>
