@@ -189,3 +189,57 @@
 // };
 
 // export default Header;
+
+{
+    /* First Hero Section (Image on Right) */
+}
+<div className="relative h-screen w-full bg-[url('/assets/herobg.png')] bg-cover bg-center">
+    <div className="flex max-w-7xl mx-auto px-10 h-full items-center">
+        <div className="relative flex flex-col items-start space-y-4 w-1/2 z-10 font-urbanist text-white">
+            <h1 className="font-extrabold text-[min(60px,4vw)] uppercase">
+                Calidad y Servicio
+            </h1>
+            <p className="font-medium text-[min(20px,1.2vw)]">
+                Elaboramos estrategias integrales que impulsan la productividad
+                en su negocio.
+            </p>
+            <CustomBtn text="Conocer más" />
+        </div>
+        <div className="absolute top-0 right-0">
+            <Image
+                src="/assets/herooverly.png"
+                alt="overlay"
+                height={400}
+                width={800}
+                className="object-contain"
+            />
+        </div>
+    </div>
+</div>;
+
+{
+    /* Second Hero Section (Image on Left) */
+}
+<div className="relative h-screen w-full bg-[url('/assets/herobg.png')] bg-cover bg-center">
+    <div className="flex max-w-7xl mx-auto px-10 h-full items-center">
+        <div className="absolute top-0 left-0">
+            <Image
+                src="/assets/herooverly.png"
+                alt="overlay"
+                height={400}
+                width={800}
+                className="object-contain"
+            />
+        </div>
+        <div className="relative flex flex-col items-start space-y-4 w-1/2 z-10 font-urbanist text-white">
+            <h1 className="font-extrabold text-[min(60px,4vw)] uppercase">
+                Calidad y Servicio
+            </h1>
+            <p className="font-medium text-[min(20px,1.2vw)]">
+                Elaboramos estrategias integrales que impulsan la productividad
+                en su negocio.
+            </p>
+            <CustomBtn text="Conocer más" />
+        </div>
+    </div>
+</div>;
